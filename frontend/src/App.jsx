@@ -1,20 +1,31 @@
 import React, { useEffect, useState } from 'react';
 
+function Header(){
+  return(<Header classname="header">
+    <h1>FromPdfToAudio</h1>
+    <p>Convert PDF files to audio files</p>
+  </Header>)
+}
 function App() {
-  const [message, setMessage] = useState('');
+   const [currentView, setCurrentView] = useState('home');
+   const [pdfText, setpdfText] = useState('');
+   const [audioFile, setAudioFile] = useState(null);
+   const [error, setError] = useState(''); 
+   const [loading, setLoading] = useState(false);
+   const[succes , setSucces]= useState(false);  
+   useEffect
+  
+  
+  
+  
+  
+  
+  }
 
-  useEffect(() => {
-    fetch('http://localhost:5000/api/hello')
-      .then(res => res.json())
-      .then(data => setMessage(data.message));
-  }, []);
-
+function Footer() {
   return (
-    <div>
-      <h1>React + Flask</h1>
-      <p>{message}</p>
-    </div>
+    <footer>
+      <p>© 2023 FromPdfToAudio. All rights reserved.</p>
+    </footer>
   );
 }
-
-export default App;
