@@ -25,7 +25,7 @@ function App() {
 function Footer() {
   return (
     <footer>
-      <p>© 2023 FromPdfToAudio. All rights reserved.</p>
+      <p>© 2025</p>
     </footer>
   );
 }
